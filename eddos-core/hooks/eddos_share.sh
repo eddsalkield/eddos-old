@@ -112,10 +112,10 @@ function transparent_make_root_executable {
 	file="$1"
 	contents="$2"
 
-#	if [ -e "$1" ]; then
-#		echo "$1 already exists.  No changes made."
-#		return 0
-#	fi
+	if [ -e "$1" ]; then
+		echo "$1 already exists.  No changes made."
+		return 0
+	fi
 
 	if get_permission "Creating executable file $1 as root."; then
 		sudo sh -c "echo -e \"$contents\" > \"$file\""

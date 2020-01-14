@@ -1,0 +1,4 @@
+DOTFILES_DIRS="${XDG_CONFIG_HOME:-$HOME/.config}/eddos/personal ${XDG_CONFIG_HOME:-$HOME/.config}/eddos/eddos-core ${XDG_CONFIG_HOME:-$HOME/.config}/eddos/eddos-xdg-bodge"
+UNDOTTED="eddos-shell nvim shell bash tmux"
+EXCLUDES="readme"
+TAGS="bash"

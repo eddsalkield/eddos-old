@@ -1,0 +1,12 @@
+To install, clone the repository into your $XDG_CONFIG_HOME,
+and run ./install.sh
+
+Equivalently:
+```
+sudo dnf install git
+mkdir -p "${XDG_CONFIG_HOME:-$HOME/.config}"
+cd "${XDG_CONFIG_HOME:-$HOME/.config}"
+git clone https://github.com/eddsalkield/eddos.git
+cd eddos
+./install.sh
+```
