@@ -1,0 +1,7 @@
+. "${XDG_CONFIG_HOME:-$HOME/.config}/eddos/eddos-core/hooks/eddos_share.sh"
+transparent_install neovim
+transparent_make_root_executable "/usr/local/bin/vim" '#!/bin/sh\nnvim "\$@"'
+
+# Install vim-plug plugin manager
+transparent_curl "${XDG_DATA_HOME:-$HOME/.local/share}/nvim/site/autoload/plug.vim" \
+	"https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"

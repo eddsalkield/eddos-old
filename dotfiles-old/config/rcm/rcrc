@@ -1,0 +1,1 @@
+DOTFILES_DIRS="$XDG_CONFIG_HOME/dotfiles $XDG_CONFIG_HOME/eddos/dotfiles"

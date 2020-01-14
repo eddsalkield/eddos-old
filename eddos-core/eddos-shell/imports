@@ -1,0 +1,3 @@
+if [ -d ${XDG_CONFIG_HOME:-$HOME/.config}/eddos-shell/aliases ]; then for f in ${XDG_CONFIG_HOME:-$HOME/.config}/eddos-shell/aliases/*; do source $f; done; fi
+if [ -d ${XDG_CONFIG_HOME:-$HOME/.config}/eddos-shell/environment ]; then for f in ${XDG_CONFIG_HOME:-$HOME/.config}/eddos-shell/environment/*; do source $f; done; fi
+if [ -d ${XDG_CONFIG_HOME:-$HOME/.config}/eddos-shell/path ]; then for f in ${XDG_CONFIG_HOME:-$HOME/.config}/eddos-shell/path/*; do source $f; done; fi

@@ -1,0 +1,38 @@
+eddos-core installs the base set of command-line only programs required for the
+system, alongside configuration where relevant.
+
+SHELL
+
+eddos currently supports the following shells:
+ * bash
+
+Shell configuration in eddos is performed in the shell directories:
+ * $XDG_CONFIG_HOME/shell (for user configuration)
+ * $XDG_CONFIG_HOME/eddos-shell (default configuration - do not touch!)
+Each of these shell directories has subdirectories for aliases, environment
+variables, and modifications to $PATH.  Splitting the configuration of the shell
+this way allows settings to be preserved across all POSIX-compliant shells,
+and makes your configurations more modularisable!
+
+Specific shell configurations can be found in $XDG_CONFIG_HOME/name-of-shell,
+for any of the supported shells.
+
+
+TERMINAL MULTIPLEXER
+eddos uses tmux for terminal multiplexing.  It is configurable at
+$XDG_CONFIG_HOME/tmux/config
+
+
+TEXT EDITOR
+neovim is the default text editor.  It is configurable at
+$XDG_CONFIG_HOME/nvim/init.vim
+
+
+OTHER PROGRAMS
+* exa - replacement for ls
+* nnn - ranger-like file browser
+
+
+OTHER PACKAGES
+ * NetworkManager-wifi
+ * NetworkManager-tui

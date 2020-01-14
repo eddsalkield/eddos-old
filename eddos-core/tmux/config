@@ -1,0 +1,16 @@
+# Change prefix
+unbind C-b
+set-option -g prefix C-a
+
+# Set vim keybindings
+unbind-key j
+bind-key j select-pane -D # Similar to 'C-w j' to navigate windows in Vim
+unbind-key k
+bind-key k select-pane -U
+unbind-key h
+bind-key h select-pane -L
+unbind-key l
+bind-key l select-pane -R
+
+# Remove nested vim delay (see https://stackoverflow.com/questions/12312178/tmux-and-vim-escape-key-being-seen-as-and-having-long-delay#13843382)
+set -s escape-time 0

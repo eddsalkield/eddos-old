@@ -1,0 +1,13 @@
+This is a bodge for applications that refuse to comply with the XDG
+Base Directory Specification
+https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html,
+but we still need in some way.
+
+Generally this involves creating some additional environment variables, but for
+some reason or another it is not possible for the following programs:
+
+ * bash
+   Unless invoked with a command-line argument, bash always looks for its
+   configuraion in ~/.bashrc
+   To compensate, we use this file to source the file at the correct location,
+   $XDG_CONFIG_HOME/bash/bashrc
