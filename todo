@@ -1,1 +1,19 @@
 update script stashes, pulls, and then applies user changes
+
+Sway:
+
+input type:touchpad {
+	natural_scroll enabled
+	tap enabled
+	dwt enabled
+}
+
+input * xkb_layout "gb"
+
+
+High DPI support:
+https://ask.fedoraproject.org/t/hwo-to-increase-the-size-of-tty-font/2604/2
+
+/etc/vconsole.conf
+KEYMAP="gb"
+FONT="latarcyrheb-sun32.psfu.gz"
