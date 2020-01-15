@@ -10,3 +10,8 @@ git clone https://github.com/eddsalkield/eddos.git
 cd eddos
 ./install.sh
 ```
+
+The script above requires an internet connection.  If you have installed Fedora
+minimal, you might need to connect to wifi using only nmcli.
+A guide can be found here:
+https://nullr0ute.com/2016/09/connect-to-a-wireless-network-using-command-line-nmcli/
