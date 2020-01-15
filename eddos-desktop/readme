@@ -1,0 +1,25 @@
+eddos-desktop installs the requisite software to set up eddos as a desktop
+operating system
+
+WINDOW MANAGER
+eddos currently supports the following window managers:
+ * sway
+
+User configuration is performed in the $XDG_CONFIG_HOME/sway directory, and
+eddos utilities symlink to $XDG_CONFIG_HOME/eddos-sway
+
+WEB BROWSER
+firefox-wayland
+
+PDF VIEWER
+mupdf
+
+MEDIA PLAYER
+vlc
+
+OFFICE SUITE
+libreoffice
+
+
+CUSTOMISATION
+eddos removes plymouth, and rebuilds the kernel-core to update the initramfs

@@ -1,4 +1,4 @@
-. "${XDG_CONFIG_HOME:-$HOME/.config}/eddos/eddos-core/hooks/eddos_share.sh"
+. "${XDG_CONFIG_HOME:-$HOME/.config}/eddos/share/install_share.sh"
 transparent_install neovim
 transparent_make_root_executable "/usr/local/bin/vim" '#!/bin/sh\nnvim "\$@"'
 

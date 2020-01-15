@@ -1,0 +1,3 @@
+. "${XDG_CONFIG_HOME:-$HOME/.config}/eddos/share/install_share.sh"
+transparent_remove "alacritty"
+transparent_copr_disable "pschyska/alacritty"

@@ -1,2 +1,0 @@
-. "${XDG_CONFIG_HOME:-$HOME/.config}/eddos/eddos-core/hooks/eddos_share.sh"
-transparent_remove NetworkManager-wifi NetworkManager-tui

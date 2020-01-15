@@ -1,0 +1,8 @@
+exa
+nnn
+wget
+htop
+tmux
+NetworkManager-wifi
+NetworkManager-tui
+lm_sensors

@@ -1,0 +1,4 @@
+. "${XDG_CONFIG_HOME:-$HOME/.config}/eddos/share/install_share.sh"
+while read package; do
+	transparent_install "$package"
+done < "${XDG_CONFIG_HOME:-$HOME/.config}/eddos/eddos-desktop/hooks/packages.txt"

@@ -1,0 +1,6 @@
+mesa-dri-drivers
+sway
+firefox-wayland
+mupdf
+vlc
+libreoffice

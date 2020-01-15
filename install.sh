@@ -5,7 +5,20 @@
 echo "Updating Fedora.  You may be prompted for a password."
 sudo dnf -y update
 
-transparent_install rcm
+#transparent_install rcm
+
+transparent_install wget
+
+echo "Installing custom patch of rcm."
+dir=$(mktemp -d)
+echo "$dir"
+
+if ! wget -P "$dir" "https://www.salkield.uk/rcm-1.3.3-6.fc31.noarch.rpm"; then
+	echo "Failed to get latest version of rcm.  Quitting."
+	exit 1
+fi
+
+sudo dnf -y install "$dir/rcm-1.3.3-6.fc31.noarch.rpm"
 
 echo "Bootstrapping rcm."
 dest="${XDG_CONFIG_HOME:-$HOME/.config}/rcm/rcrc"
